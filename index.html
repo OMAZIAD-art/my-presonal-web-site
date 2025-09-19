@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .navbar {
+            background-color: rgb(60, 60, 60);
+            color:white;
+        }
+
+
+        .items {
+            list-style: none;
+            display: inline-block;
+            position: absolute;
+            margin: 0;
+            right: 20px;
+            top: 15px;
+        }
+        .item {
+            display: inline;
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+              border-bottom: 2px solid transparent;
+        }
+        .item:hover {
+             color: goldenrod;
+              border-color: goldenrod;
+              cursor: pointer;
+        }
+         .active{
+             color: goldenrod;
+              border-color: goldenrod;
+              cursor: pointer;
+        }
+        .logo {
+            display: inline;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+                .logo:hover {
+            color: goldenrod;
+            text-shadow: 0 0 15px goldenrod, 0 0 30px goldenrod;
+        }
+        .navbar {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom:10px ;
+        }
+    .content-img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid goldenrod;
+    box-shadow: 0 0 15px goldenrod;
+    transition: 0.3s;
+    }
+   .content-img:hover{
+ transform: scale(1.1);
+
+   }
+
+
+    .btn{
+     border:none ;
+    padding: 10px;
+    background-color: goldenrod; 
+    color: white;
+    cursor: pointer;
+   border-radius: 5px;
+   transition: 0.5s;
+
+    }
+
+.btn-black{
+     border:none ;
+    padding: 10px;
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+   border-radius: 5px;
+  transition: 0.5s;
+    }
+    .btn:hover{
+     background-color: transparent;
+     color: goldenrod;
+     border: 2px solid goldenrod;
+    }
+
+ .btn-black:hover{
+     background-color: transparent;
+     color: goldenrod;
+     border: 2px solid goldenrod;
+    }
+
+    header{
+    background-color: ghostwhite;
+    height: 100vh;
+    }
+    .info-h1{
+        margin: 0px;
+        font-size: 3.5rem;
+    }
+    .info p{
+    font-size: 1.3rem;
+    }
+      .content{
+        display: flex;
+        align-items: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        gap: 7em;
+       position:absolute;
+       top: 50%;
+       transform: translatey(-45%);
+      }
+     
+      .Hobbies-info h2{ 
+    
+     font-size: 2rem;    
+    color: #333;
+     }
+     .line{
+     width: 100px;
+    height: 4px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    margin: 15px auto ;
+     }
+
+
+     .hoppy-list{
+    
+     list-style: none;
+    color: #444;
+    margin: 1.2rem auto 0;
+     }
+
+
+     .hoppy-list li{
+
+     font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     }
+
+
+     .hobbies-section{
+    align-items: center;
+     display: flex;
+     justify-content: space-evenly;
+     }
+     .center-text{
+
+     text-align: center;
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+     .skills-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 60px;
+  flex-wrap: wrap; 
+}
+
+
+.image-container img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.center-text-skills {
+  max-width: 600px;
+  text-align: center;
+}
+
+.center-text-skills h2 {
+  font-size: 2rem;
+  
+}
+
+.line-skills {
+  width: 100px;
+  height: 4px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+
+
+.skills-list {
+  list-style: none;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo"><span style="color: goldenrod;">omar</span> elrihany</h1>
+        <ul class="items">
+            <li class="item">Home</li>
+            <li class="item">Hobbies</li>
+            <li class="item">Skills</li>
+            <li class="item">Contact me</li>
+        </ul>
+    </div>
+    <header>
+        <div class="content">
+            <div class="info">
+                <h1 class="info-h1">Hi i'am<span style="color: goldenrod;"> omar elrihany</span> </h1>
+                <P>I'm a 15-year-old student who loves technology and creativity. I'm currently learning web development and enjoy building websites and exploring design ideas. I'm always curious and excited to learn new things!</P>
+                <div class="btn-box">
+                    <button class="btn-black">contact me </button>
+                    <button class="btn">view my skills </button>
+                </div>
+            </div>
+            <img class="content-img" src="project.jpg" alt="photo of me ">
+        </div>
+
+    </header>
+
+    <section class="hobbies-section">
+      <div class="Hobbies-info">
+         <h2 class="center-text">My Hobbies</h2> 
+        <div class="line"></div>
+            <ul class="hoppy-list">
+                      <li>
+                       <b>Cooding :</b>I enjoy creating websites and small apps to improve my skills .
+                      </li>
+                  
+                       <li>
+                         <b>Reading :</b>I love reading books, especially about science and adventure .
+                       </li>
+                    
+                      <li>
+                       <b>Gaming :</b>I play games that challenge my brain and improve my thinking .
+                     </li>
+                   
+                     <li>
+                       <b>Drawing :</b> Sometimes I draw just for fun and to express creativity .
+                     </li>
+
+
+            </ul>
+      </div>
+        <script
+            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+            type="module"
+            ></script>
+            <dotlottie-wc
+            src="https://lottie.host/d80e2037-7cb6-41ef-9ded-226e4e8e5dec/7RZuz5VFF7.lottie"
+            style="width: 500px;height: 500px"
+            speed="1"
+            autoplay
+            loop
+            ></dotlottie-wc>
+    </section>
+
+
+
+
+
+    <div class="skills-section">
+  
+  <div class="lottie-container">
+    <dotlottie-wc
+      src="https://lottie.host/7cbbdcef-d193-4b69-ba1e-2c67d0122087/gMUvm8vL0O.lottie"
+      style="width: 500px; height: 500px;"
+      speed="1"
+      autoplay
+      loop>
+    </dotlottie-wc>
+  </div>
+
+  <div class="center-text-skills">
+    <h2>My Skills</h2>
+    <div class="line-skills"></div>
+    <ul class="skills-list">
+      <li><b>HTML:</b> I can structure web pages using semantic HTML.</li>
+      <li><b>CSS:</b> I know how to style pages, create layouts, and make websites look great.</li>
+      <li><b>JavaScript:</b> I'm learning how to make websites interactive and dynamic.</li>
+      <li><b>Teamwork:</b> I enjoy working with others and learning from different perspectives.</li>
+      <li><b>Problem Solving:</b> I like to figure things out and fix bugs in my code.</li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+</html>
